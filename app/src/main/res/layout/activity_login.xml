@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="view"
+            type="com.devnic.gmonitoring.ui.login.ViewModelLogin" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".ui.login.LoginActivity">
+
+        <ProgressBar
+            android:id="@+id/progressbarlogin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:indeterminate="true"
+            android:indeterminateTint="#F4F4F4"
+            app:layout_constraintBottom_toBottomOf="@+id/btniniciar_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/josefins_semibold"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/ic_hand_blood"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.138"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="64dp"
+            android:background="@drawable/glucose"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.76"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacemargin"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="@dimen/spacemargin"
+            android:fontFamily="@font/josefins"
+            android:text="@string/info_sms"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/idcorreo_login"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/spacemargin"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="@dimen/spacemargin"
+            android:background="@drawable/round_input"
+            android:drawableStart="@drawable/ic_email"
+            android:fontFamily="@font/josefinsligth"
+            android:inputType="textEmailAddress"
+            android:hint="@string/correo_electronico"
+            android:text="@={view.emaillogin}"
+            android:textSize="@dimen/textsize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/password_login"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/spacemargin"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="@dimen/spacemargin"
+            android:background="@drawable/round_input"
+            android:drawableStart="@drawable/ic_password"
+            android:fontFamily="@font/josefinsligth"
+            android:inputType="textPassword"
+            android:hint="@string/contrase_a"
+            android:text="@={view.passwordlogin}"
+            android:textSize="@dimen/textsize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idcorreo_login" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btniniciar_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacebtn"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="@dimen/spacebtn"
+            android:background="@drawable/round"
+            android:elevation="10dp"
+            android:onClick="@{() -> view.inputnull()}"
+            android:fontFamily="@font/josefins"
+            android:text="Iniciar Sesion"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password_login" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnregistrarse_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacebtn"
+            android:layout_marginEnd="@dimen/spacebtn"
+            android:background="@drawable/round"
+            android:elevation="10dp"
+            android:fontFamily="@font/josefins"
+            android:text="@string/btn_registrarse"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btniniciar_login"
+            app:layout_constraintVertical_bias="0.071" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

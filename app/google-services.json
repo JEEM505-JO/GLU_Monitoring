@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "905697067808",
+    "project_id": "g-monitoring-1dcc2",
+    "storage_bucket": "g-monitoring-1dcc2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905697067808:android:437b491774ebd8b17b0d45",
+        "android_client_info": {
+          "package_name": "com.devnic.gmonitoring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905697067808-kfmbsoi5oeuchb9t9tegu2a927pi1gpn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.devnic.gmonitoring",
+            "certificate_hash": "890ced33a6e83724eb3d5eeee2b16a06d5a74704"
+          }
+        },
+        {
+          "client_id": "905697067808-toahbjeh2f8rq3udf4vu275s57o8pn7d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdhji7ClcZ0D4i9BReNyfrNdf-_0mePEU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905697067808-toahbjeh2f8rq3udf4vu275s57o8pn7d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

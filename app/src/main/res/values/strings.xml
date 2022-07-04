@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">GLU Monitoring</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="splashDescripcion">SplashScreenICON</string>
+    <string name="usuario">Nombre usuario</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+    <string name="title_checkin">Registre sus datos correctamente</string>
+    <string name="correo_electronico">Usuario o Correo electronico</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="btn_registrarse">Registrarse</string>
+    <string name="info_sms">Monitorea diariamente tus niveles de glucosa</string>
+    <string name="txt_progress">Cargando…</string>
+    <string name="title_add_months">Registro de datos de mes</string>
+    <string name="subtitle_add_months">Seleccione mes y dia inicial</string>
+    <string name="subtitle_add_week">Seleccione dia inicial y dia final</string>
+    <string name="hint_description_addmonths">Descripcion</string>
+    <string name="add_months">Agregar Mes</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="f_nicio">Fecha de inicio</string>
+    <string name="f_nicio_w">Dia de inicio</string>
+    <string name="it_descripcion">Descripcion</string>
+    <string name="item_total">Dias de la semana habiles</string>
+    <string name="item_mes">MES</string>
+    <string name="item_week_init">Inicio de semana</string>
+    <string name="item_week_fin">Fin de la semana</string>
+    <string name="add_week">Agregar semana</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="init_semana">Inicio de semana</string>
+    <string name="fin_semana">Fin de la semana</string>
+</resources>

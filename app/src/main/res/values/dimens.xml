@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sizetitle">20sp</dimen>
+    <dimen name="spacemargin">30dp</dimen>
+    <dimen name="textsize">18sp</dimen>
+    <dimen name="spacebtn">80dp</dimen>
+    <dimen name="spacetop">18dp</dimen>
+    <dimen name="circular_card">20dp</dimen>
+    <dimen name="size_textmini">14sp</dimen>
+    <dimen name="textsizesubtitle">13sp</dimen>
+</resources>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        tools:context=".ui.months.Months">
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/month_grap"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/spacetop"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/spacetop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacetop"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="@dimen/spacetop">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resumen"
+                android:textSize="@dimen/textsizesubtitle"
+                android:fontFamily="@font/josefins"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicion mas alta"
+                android:textSize="@dimen/textsizesubtitle"
+                android:fontFamily="@font/josefins"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicion mas baja"
+                android:textSize="@dimen/textsizesubtitle"
+                android:fontFamily="@font/josefins"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/medicion_alto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="150 mg"
+                android:textSize="@dimen/textsizesubtitle"
+                android:fontFamily="@font/josefins"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView2" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/medicion_bajo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="100 mg"
+                android:textSize="@dimen/textsizesubtitle"
+                android:fontFamily="@font/josefins"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView4" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gravedad"
+                android:textSize="@dimen/textsizesubtitle"
+                android:fontFamily="@font/josefins"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/medicion_alto" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/gravedad_medicion_alta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alta"
+                android:layout_marginStart="10dp"
+                android:textSize="@dimen/textsizesubtitle"
+                android:fontFamily="@font/josefins"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView6" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gravedad"
+                android:textSize="@dimen/textsizesubtitle"
+                android:fontFamily="@font/josefins"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/medicion_bajo" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/gravedad_medicion_baja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal"
+                android:textSize="@dimen/textsizesubtitle"
+                android:fontFamily="@font/josefins"
+                android:textColor="@color/black"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView5" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha de registro"
+                android:textSize="@dimen/textsizesubtitle"
+                android:fontFamily="@font/josefins"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gravedad_medicion_alta" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fecha_medicion_alta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="31-12-2022"
+                android:layout_marginStart="10dp"
+                android:textSize="@dimen/textsizesubtitle"
+                android:fontFamily="@font/josefins"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView7" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha de registro"
+                android:textSize="@dimen/textsizesubtitle"
+                android:fontFamily="@font/josefins"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gravedad_medicion_baja" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/fecha_medicion_baja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="01-05-2022"
+                android:textSize="@dimen/textsizesubtitle"
+                android:fontFamily="@font/josefins"
+                android:textColor="@color/black"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatTextView8" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addmonths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacemargin"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/spacemargin"
+            android:background="@drawable/round"
+            android:fontFamily="@font/josefins_semibold"
+            android:text="@string/add_months"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/month_grap" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvmonths"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addmonths"
+            app:layout_constraintVertical_bias="0.04" />
+
+
+    </LinearLayout>
+</layout>

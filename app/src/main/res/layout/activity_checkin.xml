@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="view"
+            type="com.devnic.gmonitoring.ui.viewmodel.ViewModelCheckIn" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_checkin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".ui.CheckIn">
+
+        <ProgressBar
+            android:id="@+id/progressBarCheckin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:indeterminate="true"
+            android:indeterminateTint="#F3F6F5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.354" />
+
+        <TextView
+            android:id="@+id/txtprogresschekin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/josefins_semibold"
+            android:text="@string/txt_progress"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sizetitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBarCheckin" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/josefins_semibold"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sizetitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/josefins"
+            android:text="@string/title_checkin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sizetitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_user_title"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            android:fontFamily="@font/josefins"
+            android:text="@string/crear_cuenta"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sizetitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/usuario_checkin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacemargin"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="@dimen/spacemargin"
+            android:drawableStart="@drawable/ic_user"
+            android:fontFamily="@font/josefinsligth"
+            android:hint="@string/usuario"
+            android:text="@={view.user}"
+            android:textSize="@dimen/textsize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/email_checkin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacemargin"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/spacemargin"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/ic_email"
+            android:fontFamily="@font/josefinsligth"
+            android:hint="@string/correo_electronico"
+            android:text="@={view.email}"
+            android:textSize="@dimen/textsize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usuario_checkin" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/appCompatEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacemargin"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/spacemargin"
+            android:inputType="textWebPassword"
+            android:drawableStart="@drawable/ic_password"
+            android:fontFamily="@font/josefinsligth"
+            android:hint="@string/contrase_a"
+            android:text="@={view.pass}"
+            android:textSize="@dimen/textsize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email_checkin" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnregistrarse_checkin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round"
+            android:elevation="4dp"
+            android:fontFamily="@font/josefins"
+            android:onClick="@{() -> view.validnull()}"
+            android:text="@string/btn_registrarse"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatEditText" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

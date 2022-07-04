@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/drawable/background.xml" value="0.1895" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/drawable/background_two.xml" value="0.1855" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/drawable/ic_calendar.xml" value="0.2" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/drawable/ic_email.xml" value="0.1895" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/drawable/ic_user.xml" value="0.1895" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/drawable/round.xml" value="0.1895" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/drawable/round_input.xml" value="0.176" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/drawable/round_two.xml" value="0.1855" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/drawable/splashbackground.xml" value="0.1545" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/layout/activity_checkin.xml" value="0.2359375" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/layout/activity_main.xml" value="0.20208333333333334" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/layout/fragment_add_day_month.xml" value="0.2359375" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/layout/fragment_add_months.xml" value="0.2" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/layout/fragment_add_weeks.xml" value="0.25" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/layout/fragment_check_in.xml" value="0.264" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/layout/fragment_day_month.xml" value="0.25" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/layout/fragment_login.xml" value="0.264" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/layout/fragment_months.xml" value="0.264" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/layout/fragment_splash_screen.xml" value="0.25" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/layout/fragment_weeks.xml" value="0.25" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/layout/itemmonths.xml" value="0.264" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/layout/itemweeks.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/Joaquin Mayorga/AndroidStudioProjects/GMonitoring2/app/src/main/res/layout/toolbar.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/months">
+
+    <fragment
+        android:id="@+id/months"
+        android:name="com.devnic.gmonitoring.ui.months.Months"
+        android:label="MESES">
+        <action
+            android:id="@+id/action_months_to_addMonths"
+            app:destination="@id/addMonths"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right"
+            app:popEnterAnim="@anim/from_right"
+            app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_months_to_weeks"
+            app:destination="@id/weeks" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMonths"
+        android:name="com.devnic.gmonitoring.ui.months.AddMonths"
+        android:label="Agregar Mes">
+
+        <action
+            android:id="@+id/action_addMonths_to_months"
+            app:destination="@id/months" />
+    </fragment>
+    <fragment
+        android:id="@+id/weeks"
+        android:name="com.devnic.gmonitoring.ui.weeks.Weeks"
+        android:label="Semanas del Mes">
+        <argument
+            android:name="monthmodel"
+            android:defaultValue="@null"
+            app:argType="com.devnic.gmonitoring.database.model.ModelMonths"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_weeks_to_addWeeks"
+            app:destination="@id/addWeeks" />
+        <action
+            android:id="@+id/action_weeks_to_dayMonth"
+            app:destination="@id/dayMonth" />
+        <action
+            android:id="@+id/action_weeks_to_months"
+            app:destination="@id/months" />
+    </fragment>
+    <fragment
+        android:id="@+id/addWeeks"
+        android:name="com.devnic.gmonitoring.ui.weeks.AddWeeks"
+        android:label="Agregar semana">
+        <action
+            android:id="@+id/action_addWeeks_to_weeks"
+            app:destination="@id/weeks" />
+    </fragment>
+    <fragment
+        android:id="@+id/dayMonth"
+        android:name="com.devnic.gmonitoring.ui.DayMonth"
+        android:label="Dia de la semana"
+        tools:layout="@layout/fragment_day_month">
+        <argument
+            android:name="weekmodel"
+            app:argType="com.devnic.gmonitoring.database.model.ModelWeeks" />
+        <action
+            android:id="@+id/action_dayMonth_to_addDayMonth"
+            app:destination="@id/addDayMonth" />
+        <action
+            android:id="@+id/action_dayMonth_to_weeks"
+            app:destination="@id/weeks" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDayMonth"
+        android:name="com.devnic.gmonitoring.AddDayMonth"
+        android:label="Agregar dia"
+        tools:layout="@layout/fragment_add_day_month">
+        <action
+            android:id="@+id/action_addDayMonth_to_dayMonth"
+            app:destination="@id/dayMonth" />
+    </fragment>
+</navigation>
