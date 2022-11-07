@@ -68,7 +68,7 @@ class ViewModelCheckIn(
             valid.postValue(false)
         } else
             if (_pass.value?.length.let { it!! <= 5 }) {
-                sms.postValue("Su contraseña debe contener al menos 5 caracteres")
+                sms.postValue("Su contraseña debe contener al menos 6 caracteres")
                 valid.postValue(false)
             } else if (_user.value?.length.let { it!! < 5 }) {
                 sms.postValue("El nombre debe contener al menos 5")

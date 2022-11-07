@@ -64,7 +64,7 @@ class ViewModelLogin(
                     val authlocal = repositoryUser.authuser(user, pass)
                     if (authlocal.isEmpty()) {
                         sms.postValue("Usuario o Contraseña Incorrecto")
-                        valid.postValue(false)
+                        valid.postValue(true)
                     } else {
                         valid.postValue(true)
                     }

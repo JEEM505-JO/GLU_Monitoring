@@ -16,6 +16,8 @@ import com.devnic.gmonitoring.database.DataBaseM
 import com.devnic.gmonitoring.databinding.FragmentWeeksBinding
 import com.devnic.gmonitoring.repository.RepositoryWeeks
 import com.devnic.gmonitoring.util.SharedPreferences
+import com.jjoe64.graphview.series.BarGraphSeries
+import com.jjoe64.graphview.series.DataPoint
 
 
 class Weeks : Fragment() {
@@ -31,6 +33,16 @@ class Weeks : Fragment() {
     private var id: Long = 0L
     private var month: Int = 0
     private var day: Int = 0
+
+    private var barr = BarGraphSeries(
+        arrayOf(
+            DataPoint(0.0, 4.0),
+            DataPoint(2.0, 6.0),
+            DataPoint(4.0, 3.0),
+            DataPoint(5.3, 6.5),
+            DataPoint(6.0, 5.6)
+        )
+    )
 
     private var bun: Bundle = Bundle()
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -56,6 +68,10 @@ class Weeks : Fragment() {
         month = shared.getmonth()
         id = shared.getIDMonth().toLong()
 
+        barr.spacing = 50
+        barr.dataWidth = 1.0
+        binding.weekGrap.addSeries(barr)
+        binding.weekGrap.title = "Medicion de la semana"
 
         adapterWeeks = AdapterViewWeeks {
             findNavController().navigate(WeeksDirections.actionWeeksToDayMonth(it))

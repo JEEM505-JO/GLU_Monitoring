@@ -23,7 +23,7 @@ class ViewModelAddWeeks(private val repositoryWeeks: RepositoryWeeks) : ViewMode
             sms.value = "Seleccione ambas fechas"
         } else {
             weeksize.value = finday.value!! - initday.value!!
-            if (weeksize.value!! < 6 || weeksize.value!! > 6) {
+            if (weeksize.value!! < 6 || weeksize.value!! > 7 ) {
                 sms.value = "El semana debe ser no menor y no mayor a 7 Dias"
             } else {
                 insert()
